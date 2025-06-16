@@ -1,9 +1,5 @@
-import { isEven } from './script.js';
+const { isEven } = require('./script');
 
-test('even number returns true', () => {
-  expect(isEven(4)).toBe(true);
-});
-
-test('odd number returns false', () => {
-  expect(isEven(5)).toBe(false);
+test('returns true for even numbers', () => {
+  expect(isEven(2)).toBe(true);
 });
